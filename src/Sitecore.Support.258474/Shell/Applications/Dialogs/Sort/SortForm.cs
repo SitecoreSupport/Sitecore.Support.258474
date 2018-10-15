@@ -179,7 +179,7 @@ namespace Sitecore.Support.Shell.Applications.Dialogs.Sort
         {
           using (new SecurityDisabler())
           {
-            using (new EditContext(item, false, false))
+            using (new EditContext(item, true, false))
             {
               item.Appearance.Sortorder = defaultSortOrder;
             }
